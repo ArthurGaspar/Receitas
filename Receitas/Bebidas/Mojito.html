@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojito</title>
+    <link href="../../Home.css" rel="stylesheet">
+</head>
+<body class="drink-bg">
+    <header>
+        <h1 class="webtitle"><a href="/Projects as a Learner/FoodBook/Home.html">FoodBook</a></h1>
+        <div class="buttonline">
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Aperitivos.html">Aperitivos</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Principais.html">Pratos Principais</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Sobremesas.html">Sobremesas</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Bebidas.html">Bebidas</a></button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>        
+        <div>
+            <h1>Mojito</h1>
+            <div id="stars-container"></div>
+            <h2>Enviado por: Lara</h2>
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Receitas/Bebidas/Mojito.jpg">
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Nacionalidades/Cuba.png">
+        </div>
+
+        <div>
+            <p>Aprenda já a fazer um tradicional mojito cubano</p>
+        </div>
+
+        <div>
+            <ul>Lista de ingredientes (serve 5 porções)
+                <li>Rum branco</li>
+                <li>Limão</li>
+                <li>Um ramo de hortelã (10 a 12 folhas)</li>
+                <li>1 colher (sopa) de açúcar</li>
+                <li>Meio copo de água com gás</li>
+                <li>Gelo em cubos</li>
+            </ul>
+        </div>
+
+        <div>
+            <ol>Passo a passo
+                <li>No copo a ser servido, esprema um limão, adicione a água com gás, o açúcar e as folhas de hortelã</li>
+                <li>Esprema bem o hortelã</li>
+                <li>Adicione rum e gelo e misture</li>
+                <li>Pronto! Sirva, aprecie e beba com moderação.</li>
+            </ol>
+        </div>
+
+        <section id="rating-section">
+            <hr>
+            <h2>Avaliações</h2>
+            <div id="rating-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" required>
+
+                <p>Avaliação:</p>
+                <div id="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                  </div>
+
+                <label for="comment">Comentário (opcional):</label>
+                <textarea id="comment"></textarea>
+
+                <button onclick="addRating()">Enviar</button>
+            </div>
+            <div id="rating-list"> <!-- Lista de comentários -->
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        @ FoodBook , 2023
+    </footer>
+</body>
+<script src="../../Ratings.js"></script>
+</html>

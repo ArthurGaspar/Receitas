@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feijoada</title>
+    <link href="../../Home.css" rel="stylesheet">
+</head>
+<body class="main-bg">
+    <header>
+        <h1 class="webtitle"><a href="/Projects as a Learner/FoodBook/Home.html">FoodBook</a></h1>
+        <div class="buttonline">
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Aperitivos.html">Aperitivos</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Principais.html">Pratos Principais</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Sobremesas.html">Sobremesas</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Bebidas.html">Bebidas</a></button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>        
+        <div>
+            <h1>Feijoada</h1>
+            <div id="stars-container"></div>
+            <h2>Enviado por: Marcelo</h2>
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Receitas/Principais/Feijoada.jpg">
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Nacionalidades/Brazil.png">
+        </div>
+
+        <div>
+            <p>Um dos pratos mais tradicionais do Brasil! Seja magra, gorda, com muitos acompanhamentos ou poucos, a feijoada serve diversos gostos
+                e de diveras formas!
+            </p>
+        </div>
+
+        <div>
+            <ul>Lista de ingredientes
+                <li>Um quilo de feijão preto</li>
+                <li>100g de carne seca</li>
+                <li>100g de paio</li>
+                <li>150g de linguiça portuguesa</li>
+                <li>70g de orelha de porco (opcional)</li>
+                <li>70g de rabo de porco (opcional)</li>
+                <li>70g de pé de porco (opcional)</li>
+                <li>100g de costelinha de porco (opcional)</li>
+                <li>50g de lombo de porco (opcional)</li>
+                <li>2 cebolas grandes</li>
+                <li>Um maço de cebolinha verde</li>
+                <li>3 folhas de louro</li>
+                <li>6 dentes de alho</li>
+                <li>Pimenta-do-reino</li>
+                <li>Uma ou duas laranjas</li>
+                <li>40mL de pinga</li>
+                <li>Sal (se necessário)</li>
+                <li>Arroz, couve, farofa, torresmo e vinagrete para complementar uma boa feijuca</li>
+            </ul>
+        </div>
+
+        <div>
+            <ol>Passo a passo
+                <li>Coloque as carnes de molho por 36 horas ou mais, trocando a água inúmeras vezes. Se forem dias quentes ou muito úmidos, coloque
+                    gelo por cima
+                </li>
+                <li>Coloque as carnes para cozinhar. Para feijoadas magras (com poucas carnes e gorduras), utilize somente paio, carne seca e linguiça</li>
+                <li>Quando as carnes estiverem moles, coloque o feijão para cozinhar e retire as carnes</li>
+                <li>Tempere o feijão</li>
+            </ol>
+        </div>
+
+        <section id="rating-section">
+            <hr>
+            <h2>Avaliações</h2>
+            <div id="rating-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" required>
+
+                <p>Avaliação:</p>
+                <div id="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                  </div>
+
+                <label for="comment">Comentário (opcional):</label>
+                <textarea id="comment"></textarea>
+
+                <button onclick="addRating()">Enviar</button>
+            </div>
+            <div id="rating-list"> <!-- Lista de comentários -->
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        @ FoodBook , 2023
+    </footer>
+</body>
+<script src="../../Ratings.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+    <link href="../../Home.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="webtitle"><a href="/Projects as a Learner/FoodBook/Home.html">FoodBook</a></h1>
+        <div class="buttonline">
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Aperitivos.html">Aperitivos</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Principais.html">Pratos Principais</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Sobremesas.html">Sobremesas</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Bebidas.html">Bebidas</a></button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>        
+        <div>
+            <h1>Nome do prato</h1>
+            <div id="stars-container"></div>
+            <h2>Enviado por: Pessoa</h2>
+            <img class="recipe-img" src="">
+        </div>
+
+        <div>
+            <p>Descrição completa da receita</p>
+        </div>
+
+        <div>
+            <ul>Lista de ingredientes
+                <li>Ingrediente 1</li>
+                <li>Ingrediente 2</li>
+                <li>Ingrediente 3</li>
+            </ul>
+        </div>
+
+        <div>
+            <ol>Passo a passo
+                <li>Faça tal coisa</li>
+                <li>Faça outra coisa</li>
+                <li>Faça então última coisa</li>
+            </ol>
+        </div>
+
+        <section id="rating-section">
+            <hr>
+            <h2>Avaliações</h2>
+            <div id="rating-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" required>
+
+                <p>Avaliação:</p>
+                <div id="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                  </div>
+
+                <label for="comment">Comentário (opcional):</label>
+                <textarea id="comment"></textarea>
+
+                <button onclick="addRating()">Enviar</button>
+            </div>
+            <div id="rating-list"> <!-- Lista de comentários -->
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        @ FoodBook , 2023
+    </footer>
+</body>
+<script src="../../Ratings.js"></script>
+</html>

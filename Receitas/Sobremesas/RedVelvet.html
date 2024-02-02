@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Velvet</title>
+    <link href="../../Home.css" rel="stylesheet">
+</head>
+<body class="dessert-bg">
+    <header>
+        <h1 class="webtitle"><a href="/Projects as a Learner/FoodBook/Home.html">FoodBook</a></h1>
+        <div class="buttonline">
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Aperitivos.html">Aperitivos</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Principais.html">Pratos Principais</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Sobremesas.html">Sobremesas</a></button>
+            <button class="button"><a href="/Projects as a Learner/FoodBook/Receitas/Bebidas.html">Bebidas</a></button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>        
+        <div>
+            <h1>Red Velvet</h1>
+            <div id="stars-container"></div>
+            <h2>Enviado por: Sarah</h2>
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Receitas/Sobremesas/RedVelvet.png">
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Nacionalidades/Usa.png">
+            <img class="recipe-img" src="/Projects as a Learner/FoodBook/Imagens/RedVelvet.jpg">
+        </div>
+
+        <div>
+            <p>Você sabia que existem muitas variações nas receitas de Red Velvet? Originalmente, não se utilizavam corantes,
+                e a cor era obtida através de uma reação natural entre o cacau e o leite acidificado, resultando em um tom de marrom avermelhado. Hoje em dia,
+                a maior parte das receitas utilizam corantes, enquanto algumas utilizam beterrabas como uma substituição mais natural. Algumas até usam as duas ao mesmo
+                tempo! A utilização de corantes começou a ser empregada para deixar as cores ainda mais chamativas, além de ser mais prática no meio
+                comercial. Entretanto, não é qualquer bolo de chocolate com corante vermelho e cobertura branca que poderia ser considerado um "red velvet". A base de um
+                Red Velvet é a mistura do cacau com o "buttermilk", ou "leitelho". No Brasil, a forma mais fácil é fazer o leitelho caseiro a partir da mistura de leite
+                com alguma substância ácida, como o vinagre. Confira abaixo uma clássica receita de Red Velvet utilizando corante vermelho para realçar a cor!
+            </p>
+        </div>
+
+        <div>
+            <ul>Lista de ingredientes
+                <li>3 ovos</li>
+                <li>300g de farinha de trigo</li>
+                <li>270g de açúcar</li>
+                <li>10g de cacau em pó</li>
+                <li>100g de manteiga</li>
+                <li>170g de iogurte natural</li>
+                <li>120mL de leite</li>
+                <li>15mL de vinagre branco</li>
+                <li>5g de fermento químico</li>
+                <li>5g de bicarbonato de sódio</li>
+                <li>10g de corante vermelho</li>
+                <li>10mL de essência de baunilha</li>
+                <li>450g de cream cheese</li>
+                <li>120g de manteiga</li>
+                <li>210g de açúcar de confeiteiro</li>
+                <li>5mL de essência de baunilha</li>
+            </ul>
+        </div>
+
+        <div>
+            <ol>Passo a passo
+                <li>Adicione o vinagre ao leite e conserve</li>
+                <li>Derreta a manteiga com o corante vermelho e conserve</li>
+                <li>Em uma tigela, misture os ovos com o açúcar peneirado e bata as claras</li>
+                <li>Nessa mistura, coloque o leite com vinagre, a manteiga com corante e o iogurte e mexa até ficar homogêneo</li>
+                <li>Adicione a farinha de trigo e o cacau peneirados nessa mistura, e mexa até ficar homogêneo</li>
+                <li>Por fim, adicione a essência de baunilha, o fermento e o bicarbonato peneirados e misture</li>
+                <li>Distribua a massa em duas formas redondas com fundo removível, untadas, enfarinhadas e com papel manteiga ao fundo</li>
+                <li>Leve ao forno preaquecido à 180ºC por cerca de 35 minutos</li>
+                <li>Deixe esfriar e desenforme. Corte cada um dos dois bolos ao meio. A massa está pronta</li>
+                <li>Para o recheio, coloque o cream cheese e a manteiga na batedeira e bata por 2 minutos até ficar cremoso</li>
+                <li>Adicione a essência de baunilha e colheradas do açúcar de confeiteiro. O recheio está pronto</li>
+                <li>Na montagem final, forre a forma com um saquinho, coloque uma fatia de bolo, coloque recheio, mais uma fatia, mais recheio, mais uma fatia,
+                    mais recheio e finalize com a quarta e última fatia.
+                </li>
+                <li>Leve para a geladeira por pelo menos 30 minutos para firmar</li>
+                <li>Retire da geladeira, vire a forma e retire o saquinho ao redor</li>
+                <li>Decore o bolo da sua maneira preferida!</li>
+            </ol>
+        </div>
+
+        <section id="rating-section">
+            <hr>
+            <h2>Avaliações</h2>
+            <div id="rating-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" required>
+
+                <p>Avaliação:</p>
+                <div id="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                  </div>
+
+                <label for="comment">Comentário (opcional):</label>
+                <textarea id="comment"></textarea>
+
+                <button onclick="addRating()">Enviar</button>
+            </div>
+            <div id="rating-list"> <!-- Lista de comentários -->
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        @ FoodBook , 2023
+    </footer>
+</body>
+<script src="../../Ratings.js"></script>
+</html>
